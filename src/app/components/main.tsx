@@ -48,12 +48,12 @@ export default function Component() {
             <div className="text-gray-700 mb-2 text-xs">
               {personal.location}
             </div>
-            <div className="flex flex-wrap items-center gap-2 text-gray-700 text-xs mb-2">
+            <div className="flex flex-wrap items-center gap-1 text-gray-700 text-xs mb-2">
               {personal.contact.links.map((link, index) => (
-                <div key={index} className="inline-flex items-center gap-1">
+                <div key={index} className="inline-flex items-center">
                   <Link
                     href={link.url}
-                    className="hover:underline flex items-center gap-1"
+                    className="hover:underline flex items-center"
                   >
                     {getIcon(link.icon)}
                   </Link>
@@ -62,13 +62,13 @@ export default function Component() {
                   )}
                 </div>
               ))}
-              <div className="inline-flex items-center gap-1">
-                <span>|</span>
+              <div className="inline-flex items-center ">
                 <a
                   href={`mailto:${personal.contact.email}`}
-                  className="hover:underline flex items-center gap-1 ml-1"
+                  className="hover:underline flex items-center mr-1"
                 >
                   {getIcon("mail")}
+                  <span className="ml-1">{personal.contact.email}</span>
                 </a>
               </div>
               <div className="inline-flex items-center gap-1">
