@@ -1,0 +1,76 @@
+{
+  "personal": {
+    "name": "siddharth gupta",
+    "tagline": "I do Full-Stack dev shipping clean features fast — with AI in my corner.",
+    "location": "Delhi, India",
+    "contact": {
+      "email": "siddharthguptaatwork@gmail.com",
+      "mobile": "9267963125",
+      "links": [
+        {
+          "label": "Twitter",
+          "url": "https://x.com/siddgupta007",
+          "icon": "twitter"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/sid0000007",
+          "icon": "github"
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/siddharthgupta007/",
+          "icon": "linkedin"
+        }
+      ]
+    }
+  },
+  "navigation": [
+    { "label": "about", "url": "#" },
+    { "label": "notes", "url": "#" }
+  ],
+  "workExperience": [
+    {
+      "title": "Fullstack Engineer",
+      "company": "Cybership",
+      "location": "Kansas City, US (remote)",
+      "duration": "Feb 2025 – Present",
+      "description": "At Cybership, I built a role-based permission system with server-side handler logic and dynamic UI access controls. I automated semantic release pipelines with Redis-powered webhooks and introduced a global HS code inventory search tool. I also improved frontend performance with smarter skeletons and pagination, while adding markdown-based in-app docs to cut support overhead."
+    },
+    {
+      "title": "Software Engineer Intern",
+      "company": "GudSwap",
+      "location": "Bengaluru, India (remote)",
+      "duration": "Sept 2024 – Dec 2024",
+      "description": "During my internship at GudSwap, I helped launch fashion and event platforms using TypeScript, PostgreSQL, and AWS. I designed robust database schemas, set up Amplify previews for CI/CD, and built a dynamic asset delivery system via single API routes for theme-based rendering (Diwali, Holi, etc)."
+    }
+  ],
+  "skills": {
+    "Languages": "C++, TypeScript, JavaScript, Golang, Python",
+    "Frameworks": "React.js, Next.js, Node.js, Express.js, FastAPI",
+    "Libraries": "Tanstack Query, Tanstack Tables, Zod, tRPC, AWS SDK",
+    "Databases": "PostgreSQL, MongoDB, Firestore, Prisma, Drizzle",
+    "Cloud & DevOps": "AWS, GCP, Docker, Redis, Ngrok",
+    "Foundations": "OAuth, Webhooks, REST APIs, WebSockets, CI/CD, Turborepo, Serverless, SOLID"
+  },
+  "projects": [
+    {
+      "title": "Daccotta",
+      "technologies": "React, Next.js, Bun.js, TypeScript, Express.js, MongoDB, Firebase",
+      "githubUrl": "https://github.com/daccotta-org/daccotta",
+      "description": "Developed an open-source platform for social networking based on movies. Holds 80+ stars, 25+ contributors. Currently has 250+ active users and is soon to launch v2.0 of the platform. Selected for Microsoft for Startup Program, accepted as a project in GSSOC-2024."
+    },
+    {
+      "title": "AWS EC2 Monitor",
+      "technologies": "Next.js, TypeScript, AWS SDK, Express, AWS EC2 Webhooks",
+      "githubUrl": "https://github.com/sid0000007/Meta-data-Scrapper",
+      "description": "Developed a virtual machine web scraper that monitors Chrome script execution on AWS EC2 Microsoft Windows 10 instances using the SDK. Real-time status tracking, and scalable architecture managing 3+ concurrent Chrome scripts. Implemented Cold starts the aws EC2 instances from Next.js UI dashboard using AWS SDK webhooks to API, useful to hit multiple scripts, enhancing the user operations to ease."
+    }
+  ],
+  "education": {
+    "institution": "USICT, IP University",
+    "location": "Delhi, India",
+    "degree": "Bachelor of Technology in Computer Science Engineering",
+    "duration": "2022 – 2026"
+  }
+}
