@@ -1,7 +1,7 @@
 {
   "personal": {
     "name": "Siddharth Gupta (Sid)",
-    "tagline": "I do Full-Stack dev shipping clean features fast — with AI in my corner.",
+    "tagline": "Full stack developer, leverage LLM's to make Progressive web applications",
     "location": "Delhi, India",
     "contact": {
       "email": "siddharthguptaatwork@gmail.com",
@@ -27,7 +27,8 @@
   },
   "navigation": [
     { "label": "about", "url": "#" },
-    { "label": "notes", "url": "#" }
+    { "label": "notes", "url": "#" },
+    { "label": "work w/ me", "url": "#" }
   ],
   "workExperience": [
     {
@@ -38,11 +39,25 @@
       "description": "At Cybership, I built a role-based permission system with server-side handler logic and dynamic UI access controls. I automated semantic release pipelines with Redis-powered webhooks and introduced a global HS code inventory search tool. I also improved frontend performance with smarter skeletons and pagination, while adding markdown-based in-app docs to cut support overhead."
     },
     {
-      "title": "Software Engineer Intern",
-      "company": "GudSwap",
+      "title": "Software Engineer",
+      "company": "Gudswap",
       "location": "Bengaluru, India (remote)",
       "duration": "Sept 2024 – Dec 2024",
-      "description": "During my internship at GudSwap, I helped launch fashion and event platforms using TypeScript, PostgreSQL, and AWS. I designed robust database schemas, set up Amplify previews for CI/CD, and built a dynamic asset delivery system via single API routes for theme-based rendering (Diwali, Holi, etc)."
+      "description": "An Inventory based startup where I built PWA for there B to C clients, that has 1000+ daily foot-falls. Built a admin management software for the B to B clients to handle the orders and making CRUD operations, manages about 200+ pickup orders a day. Designed and implemented a relational schema and database with 6 tables. Utilized an S3 bucket for storing 34+ client assets and set up an EC2 postgres instance for schema table creation."
+    },
+    {
+      "title": "Full Stack Developer Intern",
+      "company": "Eventory",
+      "location": "Remote",
+      "duration": "May 2024 – July 2024",
+      "description": "Developed 27 backend schema tables and frontend components, improving workflow efficiency by 50% and increasing user session duration by 30%. Led AWS S3 migration and codebase modernization efforts, reducing load times and enhancing security while maintaining CI/CD best practices. Collaborated with a team of 5 to implement CI/CD workflows, including PR previews and code quality checks, with 71 commits and 15 PRs merged over two months."
+    },
+    {
+      "title": "Full Stack Intern",
+      "company": "Alpha Humans (NGO)",
+      "location": "Remote",
+      "duration": "March 2024 – July 2024",
+      "description": "Contributed to a non-profit initiative aimed at solving blood shortages in India by developing a web platform using React.js and Node.js. Created user authentication systems and integrated backend APIs for seamless communication between blood donors and recipients. Helped establish a more efficient blood donation process ensuring timely assistance to those in need."
     }
   ],
   "skills": {
@@ -50,7 +65,7 @@
     "Frameworks": "React.js, Next.js, Node.js, Express.js, FastAPI",
     "Libraries": "Tanstack Query, Tanstack Tables, Zod, tRPC, AWS SDK",
     "Databases": "PostgreSQL, MongoDB, Firestore, Prisma, Drizzle",
-    "Cloud & DevOps": "AWS, GCP, Docker, Redis, Ngrok",
+    "Cloud & DevOps": "AWS, GCP, Docker, Redis, Ngrok, Firebase",
     "Foundations": "OAuth, Webhooks, REST APIs, WebSockets, CI/CD, Turborepo, Serverless, SOLID"
   },
   "projects": [
@@ -58,13 +73,31 @@
       "title": "Daccotta",
       "technologies": "React, Next.js, Bun.js, TypeScript, Express.js, MongoDB, Firebase",
       "githubUrl": "https://github.com/daccotta-org/daccotta",
-      "description": "Developed an open-source platform for social networking based on movies. Holds 80+ stars, 25+ contributors. Currently has 250+ active users and is soon to launch v2.0 of the platform. Selected for Microsoft for Startup Program, accepted as a project in GSSOC-2024."
+      "description": "A social network platform for movie buff's. With 30+ contributors and 80+ starred on github. Developed an open-source platform for social networking based on movies. Currently has 250+ active users and is soon to launch v2.0 of the platform. Selected for Microsoft for Startup Program, accepted as a project in GSSOC-2024."
     },
     {
-      "title": "AWS EC2 Monitor",
+      "title": "Web Scraper (VM's and AWS EC2)",
       "technologies": "Next.js, TypeScript, AWS SDK, Express, AWS EC2 Webhooks",
-      "githubUrl": "https://github.com/sid0000007/Meta-data-Scrapper",
-      "description": "Developed a virtual machine web scraper that monitors Chrome script execution on AWS EC2 Microsoft Windows 10 instances using the SDK. Real-time status tracking, and scalable architecture managing 3+ concurrent Chrome scripts. Implemented Cold starts the aws EC2 instances from Next.js UI dashboard using AWS SDK webhooks to API, useful to hit multiple scripts, enhancing the user operations to ease."
+      "githubUrl": "https://github.com/sid0000007/v4wZf7GF9x",
+      "description": "Scrape data from websites using Virtual machines and AWS. Developed a virtual machine web scraper that monitors Chrome script execution on AWS EC2 Microsoft Windows 10 instances using the SDK. Real-time status tracking, and scalable architecture managing 3+ concurrent Chrome scripts. Implemented Cold starts the aws EC2 instances from Next.js UI dashboard using AWS SDK webhooks to API, useful to hit multiple scripts, enhancing the user operations to ease."
+    },
+    {
+      "title": "Mocbot - AI Chatbot",
+      "technologies": "AI, Machine Learning, Natural Language Processing",
+      "githubUrl": "https://github.com/Siddharthgupta007/mocbot",
+      "description": "A chatbot that helps users to solve queries based on the context and Coal data. Built with advanced AI capabilities to provide intelligent responses and contextual understanding."
+    },
+    {
+      "title": "KYC Progress Form",
+      "technologies": "TypeScript, Framer Motion, React",
+      "githubUrl": "https://kyc-lemon-xi.vercel.app/",
+      "description": "A KYC form for a financial firm from wallstreet build with typescript and framer. Features progressive form design with smooth animations and validation."
+    },
+    {
+      "title": "Admin Panel",
+      "technologies": "Next.js, Shadcn/UI, TypeScript",
+      "githubUrl": "https://ca-yc-front.vercel.app/",
+      "description": "A admin panel for a startup with pixel perfect UI. Build with Next.js and Shadcn in 4 hours. Features comprehensive dashboard functionality and modern UI components."
     }
   ],
   "education": {
