@@ -27,8 +27,7 @@
   },
   "navigation": [
     { "label": "about", "url": "#" },
-    { "label": "notes", "url": "#" },
-    { "label": "work w/ me", "url": "#" }
+    { "label": "notes", "url": "#" }
   ],
   "workExperience": [
     {
