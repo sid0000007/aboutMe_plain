@@ -1,6 +1,6 @@
 {
   "personal": {
-    "name": "Siddharth Gupta (Sid)",
+    "name": "Siddharth",
     "tagline": "I do Full-Stack dev shipping clean features fast — with AI in my corner.",
     "location": "Delhi, India",
     "contact": {
@@ -26,8 +26,11 @@
     }
   },
   "navigation": [
-    { "label": "about", "url": "#" },
-    { "label": "notes", "url": "#" }
+    { "label": "about", "url": "/" },
+    { "label": "work", "url": "/work" },
+    { "label": "projects", "url": "/projects" },
+    { "label": "notes", "url": "/notes" },
+    { "label": "tech", "url": "/tech" }
   ],
   "workExperience": [
     {

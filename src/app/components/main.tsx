@@ -1,176 +1,56 @@
-import { User, Twitter, Github, Mail, Phone, ExternalLink } from "lucide-react";
 import Link from "next/link";
-import data from "../data/data.json";
+import Navigation from "./navigation";
+import MainHeader from "./main-header";
 
 export default function Component() {
-  const { personal, navigation, workExperience, skills, projects, education } =
-    data;
-
-  // Icon mapping
-  const getIcon = (iconName: string) => {
-    const iconMap = {
-      user: User,
-      twitter: Twitter,
-      github: Github,
-      mail: Mail,
-      phone: Phone,
-    };
-    const IconComponent = iconMap[iconName as keyof typeof iconMap];
-    return IconComponent ? <IconComponent size={14} /> : null;
-  };
-
   return (
-    <div className="min-h-screen bg-white">
-      <div className="max-w-2xl mx-auto px-8 py-8">
-        {/* Navigation */}
-        <nav className="flex justify-end gap-8 mb-16">
-          {navigation.map((item, index) => (
+    <div className="max-w-2xl mx-auto px-8 py-8">
+      <Navigation />
+
+      {/* Main Content */}
+      <div className="max-w-2xl">
+        {/* Header */}
+        <MainHeader />
+
+        {/* Bio Content */}
+        <div className="space-y-6 text-gray-800 leading-relaxed text-xs">
+          <p>
+            I'm a full-stack developer passionate about building scalable
+            solutions and innovative user experiences. I got my start when I was
+            16 making websites for everyone I possibly could. I spent my
+            childhood learning and building, from playing with code to becoming
+            a professional developer.
+          </p>
+
+          <p>
+            Currently working as a Fullstack Engineer at{" "}
             <Link
-              key={index}
-              href={item.url}
-              className="text-gray-500 hover:text-gray-700 text-sm"
+              href="https://cybership.io/"
+              className="text-pink-400 hover:underline"
             >
-              {item.label}
+              Cybership
             </Link>
-          ))}
-        </nav>
+            , where I build role-based permission systems and automated release
+            pipelines. I'm also passionate about open-source development and
+            have contributed to projects like{" "}
+            <Link
+              href="https://daccotta.com/"
+              className="text-yellow-500 hover:underline"
+            >
+              Daccotta
+            </Link>
+            .
+          </p>
 
-        {/* Main Content */}
-        <div className="max-w-2xl">
-          {/* Header */}
-          <h1 className="text-5xl font-normal text-gray-900 mb-4">
-            {personal.name}
-          </h1>
-          <p className="text-gray-500 text-xs pb-4">{personal.tagline}</p>
-
-          {/* Contact & Location */}
-          <div className="mb-8">
-            <div className="text-gray-700 mb-2 text-xs">
-              {personal.location}
-            </div>
-            <div className="flex flex-wrap items-center gap-1 text-gray-700 text-xs mb-2">
-              {personal.contact.links.map((link, index) => (
-                <div key={index} className="inline-flex items-center">
-                  <Link
-                    href={link.url}
-                    className="hover:underline flex items-center"
-                  >
-                    {getIcon(link.icon)}
-                  </Link>
-                  {index < personal.contact.links.length - 1 && (
-                    <span className="ml-1">|</span>
-                  )}
-                </div>
-              ))}
-              <div className="inline-flex items-center ">
-                <a
-                  href={`mailto:${personal.contact.email}`}
-                  className="hover:underline flex items-center mr-1"
-                >
-                  {getIcon("mail")}
-                  <span className="ml-1">{personal.contact.email}</span>
-                </a>
-              </div>
-              <div className="inline-flex items-center gap-1">
-                <span>|</span>
-                <span className="flex items-center gap-1 ml-1">
-                  {getIcon("phone")}
-                  (+91) {personal.contact.mobile}
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div className="space-y-5 text-gray-800 leading-relaxed">
-            {/* Work Experience */}
-            <div>
-              <h2 className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-                Work Experience
-              </h2>
-              {workExperience.map((job, index) => (
-                <div
-                  key={index}
-                  className={index < workExperience.length - 1 ? "mb-4" : ""}
-                >
-                  <div className="flex justify-between items-baseline">
-                    <span className="font-medium text-sm text-gray-900">
-                      {job.title}
-                    </span>
-                    <span className="text-gray-500 text-xs">
-                      {job.duration}
-                    </span>
-                  </div>
-                  <div className="text-gray-500 text-xs mb-2">
-                    {job.company}, {job.location}
-                  </div>
-                  <p className="text-xs text-gray-600 leading-relaxed">
-                    {job.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            {/* Skills */}
-            <div>
-              <h2 className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-                Skills
-              </h2>
-              {Object.entries(skills).map(([category, skillList]) => (
-                <div key={category} className="mb-1 text-xs">
-                  <span className="font-medium text-gray-700">{category}:</span>{" "}
-                  <span className="text-gray-600">{skillList}</span>
-                </div>
-              ))}
-            </div>
-
-            {/* Projects & Builds */}
-            <div>
-              <h2 className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-                Projects & Builds
-              </h2>
-              {projects.map((project, index) => (
-                <div
-                  key={index}
-                  className={index < projects.length - 1 ? "mb-4" : ""}
-                >
-                  <div className="flex justify-between items-baseline">
-                    <span className="font-medium text-sm text-gray-900">
-                      {project.title}
-                    </span>
-                    <Link
-                      href={project.githubUrl}
-                      className="text-gray-500 hover:underline text-sm"
-                    >
-                      <ExternalLink size={14} />
-                    </Link>
-                  </div>
-                  <div className="text-gray-500 text-xs mb-2">
-                    {project.technologies}
-                  </div>
-                  <p className="text-xs text-gray-600 leading-relaxed">
-                    {project.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            {/* Education */}
-            <div>
-              <h2 className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-                Education
-              </h2>
-              <div className="flex justify-between items-baseline">
-                <span className="font-medium text-sm text-gray-900">
-                  {education.institution}
-                </span>
-                <span className="text-gray-500 text-xs">
-                  {education.duration}
-                </span>
-              </div>
-              <div className="text-gray-500 text-xs">{education.location}</div>
-              <div className="text-gray-600 text-xs">{education.degree}</div>
-            </div>
-          </div>
+          <p>
+            I'm a{" "}
+            <Link href="#" className="text-blue-500 hover:underline">
+              USICT, IP University
+            </Link>{" "}
+            student pursuing Computer Science Engineering. I moved to Delhi in
+            2022 and have been actively involved in the tech community since
+            then.
+          </p>
         </div>
       </div>
     </div>
